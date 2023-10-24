@@ -1,0 +1,269 @@
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para barra de navegação */
+.center {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.07);
+    z-index: 4;
+    flex-wrap: wrap;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a {
+    padding-left: 20px;
+    text-decoration: none;
+    list-style: none;
+    color: black;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.buttons a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.cadastro, .login {
+    padding: 10px 40px;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s background;
+}
+
+.cadastro {
+    background-color: black;
+    color: white;
+}
+
+.login {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.cadastro:hover {
+    background-color: rgba(0, 130, 134, 0.603);
+    transition: 1s background;
+}
+
+.login:hover {
+    background-color: rgba(231, 231, 231, 0.603);
+    transition: 1s background;
+}
+
+/* Menu topo */
+
+.textosobre, .textomeio {
+    padding: 25px 300px;
+    text-align: center;
+}
+
+.textosobre h1, .textomeio h1 {
+    font-size: 50px;
+    text-align: right;
+}
+
+.textosobre p, .textomeio p {
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: justify;
+}
+
+/* Menus ocultos */
+
+.titulo-cards {
+    padding: 25px 170px;
+    text-align: left;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 150px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.custom-card {
+    width: 30%;
+    margin: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    display: inline-block;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 20px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.custom-card:hover .card-body {
+    transform: translateY(0);
+}
+
+.card-body h5 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.card-body p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+.saiba {
+    background-color: #007f5f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.saiba:hover {
+    background-color: #005e47;
+}
+
+.sobre {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+/* Tela de Login */
+
+/* Reset de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo da página */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+/* Estilos para o formulário de login */
+.login-section {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.login-section h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-button {
+    background-color: #007f5f;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #005e47;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: none;
+    margin: 0 auto;
+    padding: 0 2%;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06), 0 0 2px rgba(0, 0, 0, 0.07);
+    z-index: 4;
+    flex-wrap: wrap;
+}
+
+footer nav{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer ident{
+    margin-top: 15px;
+}
